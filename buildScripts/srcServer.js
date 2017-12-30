@@ -1,9 +1,9 @@
-var express = require('express');
-var path = require('path');
-var open = require('open');
+import express from 'express';
+import path from 'path';
+import open from 'open';
 
-var port = 3000;
-var app = express();
+const port = 3000;
+const app = express();
 
 //when run with node command in CLI express is coming in, sees that we are requesting the root and then sending the file we specified here and opening the app at the local host 3000
 app.get('/', function(req, res) {
